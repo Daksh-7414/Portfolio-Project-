@@ -1,0 +1,586 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.about,.sign_up_section,.contact,.review,.gallery,.service{
+    padding-top: 60px;
+}
+/* Nav bar code */
+#nav_bar{
+    height: 69px;
+    background: rgb(14, 13, 13);    
+
+}
+.nav_bar , .web_heading{
+    display: flex;
+    justify-content: space-between ;
+    /* margin-top: 10px; */
+}
+
+.logo{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 45px;
+}
+.web_heading{
+    list-style: none;
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 39px;
+    color: #e83e8c;
+    font-family: 'Reggae One', cursive;
+    cursor: pointer;
+}
+/* .nav_bar li:hover{
+    color: rgb(0, 216, 216);
+    border-bottom: 2px solid aqua;
+} */
+ .nav_bar {
+    display: inline-block;
+    margin-left: 190px;
+} 
+nav ul li{
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 20px;
+    font-family: 'Reggae One', cursive;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(0, 216, 216);
+    border-bottom: 2px solid aqua;
+} 
+/* #nav_bar{
+    position: fixed;
+    top:0px;
+    width: 100%;
+} */
+/* servivce section Code */
+.topic{
+    color: rgb(22, 22, 22);
+    font-size: 45px;
+    margin-top: 20px;
+    /* margin-top: 100px; */
+    margin-left: 400px;
+    margin-bottom: 30px;
+    /* font-family: 'Patrick Hand', cursive; */
+    letter-spacing: 3px;
+}
+.first_let{
+    
+    color: rgb(0, 216, 216);
+}
+.card{
+    height:450px;
+    width: 250px;
+    /* background: #e83e8c; */
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,0.3);
+}
+.card_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card img{
+    height: 10.75em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 250px;
+}
+.card .card_data{
+    text-align: center;
+}
+.card_data .card_head{
+    font-size: 1.5rem;
+    padding-top: 4px ;
+    margin: 5px;
+    margin-bottom: 9px;
+    color: #0098a1;
+}
+.card_data p{
+    color: #333;
+    font-size: 1.1rem;
+    text-align: center;
+    margin:8px;
+}
+p{
+    margin-top: 10px;
+}
+.card_btn{
+    height: 40px;
+    width: 150px;
+    background-color: #0098a1;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.card_btn:hover{
+    background-color: #fff;
+    color: #0098a1;
+    border: #0098a1 2px solid;
+    cursor: pointer;
+}
+/* about section code */
+#about_let{
+    margin-left: 550px;
+}
+.about_head{
+    font-size: 40px;
+    color:#0098a1;
+     font-family: 'Merienda', cursive;
+}
+#about_img{
+    background-image: url(images/about_us_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:35vh;
+    width: 28vw;
+    padding-right: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.about_data ul li{
+  font-size: 16px;
+  color:#333;
+  font-family: 'Merienda', cursive;
+}
+#about_div{
+    display: flex;
+    justify-content: space-around;
+}
+.about_data .abt_but{
+    height: 53px;
+    width:200px;
+    margin: 20px;
+    border: 4px #0098a1 solid;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#abt_1{
+    background: white;
+    color: #0098a1;
+}
+#abt_2{
+    background-color: #0098a1;
+    color: white;
+}
+#abt_2:hover{
+    background-color: white;
+    color: #0098a1;
+    transition: 0.7s;
+}
+/* gallery section code */
+#gallery_let{
+    margin-left: 590px;
+}
+.gallery_div{
+    display: flex;
+    justify-content: center;
+}
+.city_div{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    border-radius: 11px;
+    margin-right: 45px;
+    margin-left: 40px;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,0.3);
+}
+.gallery_img{
+    height: 78%;
+    width: 300px;
+    background-color: aqua;
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+}
+.city_name{
+    height: 22%;
+    width: 290px;
+}
+#city_name{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3px;
+    font-family: 'Merienda', cursive;
+    color: black;
+    /* font-weight: 549px; */
+    cursor: pointer;
+}
+#city_name:hover{
+    color:#009da5;
+}
+#city_img_1{
+    background-image: url(img1/ajmer2.jpg);
+    background-size: cover;
+}
+#city_img_2{
+    background-image: url(img1/alwar.jpg);
+    background-size: cover;
+}
+#city_img_3{
+    background-image: url(img1/banswara.jpg);
+    background-size: cover;
+}
+#city_img_4{
+    background-image: url(img1/baran.jpg);
+    background-size: cover;
+}
+#city_img_5{
+    background-image: url(img1/barmer.jpg);
+    background-size: cover;
+}
+#city_img_6{
+    background-image: url(img1/bharatpur.jpg);
+    background-size: cover;
+}
+#city_img_7{
+    background-image: url(img1/bhilwara.jpg);
+    background-size: cover;
+}
+#city_img_8{
+    background-image: url(img1/bikaner.jpg);
+    background-size: cover;
+}
+#city_img_9{
+    background-image: url(img1/bundi.jpg);
+    background-size: cover;
+}
+#city_img_10{
+    background-image: url(img1/chittor.jpeg);
+    background-size: cover;
+}
+#city_img_11{
+    background-image: url(img1/churu.jpg);
+    background-size: cover;
+}
+#city_img_12{
+    background-image: url(img1/Dausa.jpg);
+    background-size: cover;
+}
+#city_img_13{
+    background-image: url(img1/Dholpur.jpg);
+    background-size: cover;
+}
+#city_img_14{
+    background-image: url(img1/Dungarpur.jpg);
+    background-size: cover;
+}
+#city_img_15{
+    background-image: url(img1/hanumangarh1.jpg);
+    background-size: cover;
+}
+#city_img_16{
+    background-image: url(img1/jaipur.jpg);
+    background-size: cover;
+}
+#city_img_17{
+    background-image: url(img1/jaishalmer.jpeg);
+    background-size: cover;
+}
+#city_img_18{
+    background-image: url(img1/jalor.jpg);
+    background-size: cover;
+}
+#city_img_19{
+    background-image: url(img1/Jhalawar.jpg);
+    background-size: cover;
+}
+#city_img_20{
+    background-image: url(img1/jodhpur.jpg);
+    background-size: cover;
+}
+#city_img_21{
+    background-image: url(img1/Karauli.jpg);
+    background-size: cover;
+}
+#city_img_22{
+    background-image: url(img1/Kota.jpg);
+    background-size: cover;
+}
+#city_img_23{
+    background-image: url(img1/Nagaur.jpg);
+    background-size: cover;
+}
+#city_img_24{
+    background-image: url(img1/pali.jpg);
+    background-size: cover;
+}
+#city_img_25{
+    background-image: url(img1/Pratapgarh.jpg);
+    background-size: cover;
+}
+#city_img_26{
+    background-image: url(img1/Sawai\ Madhopur.jpg);
+    background-size: cover;
+}
+#city_img_27{
+    background-image: url(img1/Sikar\ \(2\).jpeg);
+    background-size: cover;
+}
+#city_img_28{
+    background-image: url(img1/Sirohi.jpg);
+    background-size: cover;
+}
+#city_img_29{
+    background-image: url(img1/Sri\ Ganganagar.jpg);
+    background-size: cover;
+}
+#city_img_30{
+    background-image: url(img1/udaipur.jpeg);
+    background-size: cover;
+}
+/* review section code */
+.review_section{
+    height: 1080px;
+    width: 100%;
+    background: url(review_img.jpg), linear-gradient(#0099a185, #0099a185) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+#review_let{
+    font-size: 50px;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding-bottom: 0px;
+}
+#rev_first_let{
+    color: yellow;
+}
+.review_detail{
+    /* max-height: 95%; */
+    width: 340px;
+    background-color: #fff;
+}
+.review_detail i{
+    font-size: 30px;
+   
+}
+.review_cir{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: relative;
+    top: 80px;
+    margin-left: 87px;
+}
+#review_img_1{
+    background: url(images/review_p1\(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#review_img_2{
+    background: url(images/review_p2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#review_img_3{
+    background: url(images/review_p3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.review_div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.review_cont,.review_cir:hover{
+    cursor: pointer;
+}
+.review_name{
+    color: #0098a1;
+    font-size: 43px;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-left: 15px;
+}
+.per_review{
+    margin: 9px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    line-height:normal;
+}
+/* contact us section code */
+  .heading{
+    color: #333;
+    font-size: 45px;
+    padding: 1rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+.heading span{
+    color: #0098a1;
+}
+  .contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .contact .row .contact-info .box{
+    margin:4rem 2rem;
+  }
+  
+  .contact .row .contact-info .box h3{
+    font-size: 2rem;
+    color:#333;
+  }
+  
+  .contact .row .contact-info .box h3 i{
+    color:#0098a1;
+  }
+  
+  .contact .row .contact-info .box p{
+    padding-left: 3rem;
+    font-size: 1.7rem;
+    color:#aaa;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .contact .row .contact-form-container{
+    width:54%;
+    margin-bottom: 10px;
+  }
+  .contact .row .contact-form-container h3{
+    font-size: 3rem;
+    padding-top: 4rem;
+    color:#0098a1;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  
+  .contact .row .contact-form-container .inputBox{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .contact .row .contact-form-container .inputBox input{
+    width: 50%;
+  }
+  
+  .contact .row .contact-form-container form input , textarea{
+    outline: none;
+    border:.2rem solid #0098a1;
+    height:4rem;
+    background:#fff;
+    padding:0 1rem;
+    margin:1rem 0;
+    font-size: 1.8rem;
+  }
+  
+  .contact .row .contact-form-container form textarea{
+    width: 95%;
+    padding:1rem;
+    resize:both;
+    height:10%;
+    font-size: 1.8rem;
+  }
+  
+  .contact .row .contact-form-container form input[type="submit"]{
+    color:#0098a1;
+    border:.2rem solid #0098a1;
+    cursor: pointer;
+    transition: .2s;
+    width:20rem;
+  }
+  
+  .contact .row .contact-form-container form input[type="submit"]:hover{
+    color:#fff;
+    background:#0098a1;
+  }
+/* sign up section code */
+.sign_up{
+    margin-top: 0px;
+}
+.sign_up_div{
+    height: 310px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
+}
+.sign_up_line{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    text-shadow: 0 .5rem .5rem #000;
+}
+#sign_up_data{margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+}
+.sign_up_div input{
+    height: 45px;
+    width: 600px;
+    border: none;
+    background-color: rgba(255,255,255,.2);
+    font-size: 25px;
+    color: #fff;
+}
+.sign_up_div input::placeholder{
+    color:#fff;
+}
+.sign_up_div span{
+    height:45px;
+    width: 300px;
+    color: #fff;
+    background-color: #0098a1;
+    border: none;
+    font-size: 30px;
+    font-family: 'Courgette', cursive;
+    margin-left: 6px;
+    text-align: center;
+}
+.sign_up_div span:hover{
+    background-color: #fff;
+    color: #0098a1;
+    border: #0098a1 3px solid;
+    transition: 0.5s;
+}
+.sign_up_div input:hover{
+    border: none;
+}
+/* footer section code */
+footer{
+    background-color:#0c0b0b;
+    height: 90px;
+}
+.footer_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foot_text{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.foot_text span{
+    color: #0098a1;
+}
+.fafa_div i{
+    margin-top: 25px;
+    margin-left: 35px;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+.fafa_div i:hover{
+    color: #0098a1;
+}

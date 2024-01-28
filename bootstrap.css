@@ -1,0 +1,94 @@
+/* LIight Mode color roots code */
+:root{
+    --bg-main: #1b1a2a;
+    --bg-primary : #ecf2ff;
+    --service_card_back: #32313fa4;
+}
+body{
+    color: var(--bg-primary);
+    background-color: var(--bg-main);
+}
+.circle-wrap .inside-circle {
+    background: var(--bg-main);
+}
+
+body .service .cards .card{
+    background: var(--service_card_back);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    
+}
+
+footer{
+    color: #ecf2ff;
+}
+/* Dark Mode Color Roots Code */
+:root .dark-mode{
+    --bg-main: #ecf2ff;
+    --bg-primary : #1b1a2a;
+    --service_card_back: #ecf2ff;
+}
+body .dark-mode{
+    color: var(--bg-primary);
+    background-color: var(--bg-main);
+}
+body .dark-mode .circle-wrap .inside-circle {
+    background: var(--bg-primary);
+}
+body .dark-mode .service .cards .card{
+    background: var(--service_card_back);
+    color: var(--bg-primary);
+    /*box-shadow: 0 .3rem .5rem rgba(0,0,0,0.3);*/
+}
+
+/* styles */
+body i{
+    color: #7663de;
+}
+body a[type="button"]{
+    /* border: 2px solid linear-gradient(to right , #6e2fe1,#8928cb); */
+    background: linear-gradient(to right , #6e2fe1,#8928cb);
+    color: #fff;
+    transition: 0.2s;
+    
+    
+}
+body a[type="button"]:hover{
+    border: 2px solid linear-gradient(to right , #6e2fe1,#8928cb);
+    /* border: 2px solid #7663de; */
+    background: var(--primary_body);
+    border-width:1px;
+    border-color: #8928cb;
+    /* border: 2px solid#7663de; */
+    
+}
+
+/* Combine padding of about,service,project,testimonials */
+.about,.service,.project,.testimonials{
+    padding-top: 6rem;
+}
+
+/* media */
+@media (max-width: 786px){
+    .about,.service,.project,.testimonials{
+        padding-top: 4rem;
+    }
+}
+@media (max-width: 576px){
+   footer .row .det-2{
+    margin-bottom: 25px;
+   } 
+}
+/* @media (max-width: 1400px) {
+    footer{
+        padding-top: 40px;
+    }
+} */
+/* @media (min-width: 786px){
+   footer{
+    padding-left: 50px;
+    padding-right: 50px;
+   } 
+} */
